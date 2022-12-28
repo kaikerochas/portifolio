@@ -1,0 +1,187 @@
+::-webkit-scrollbar {
+    width: 10px;
+  }
+::-webkit-scrollbar-track {
+    background: rgb(114, 30, 0);
+  }
+::-webkit-scrollbar-thumb {
+    background: #c90934;
+}
+@keyframes anima-card{
+    from {margin-top: 7%;}
+    to {margin-top: 8%;}
+}
+body{
+    background-image: url("../media/fundo.jpg");
+    background-color: #070508;
+    background-position: center top, center bottom;
+    background-repeat: no-repeat;
+    background-size: 100%, contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    animation-name: anima-card;
+    animation-duration: 1.5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    margin-top: 7%;
+    padding: 20px;
+    background-color: rgb(10, 10, 10);
+    width: 370px;
+    min-height: 40vh;
+    border-radius: 25px;
+    text-align: center;
+    border-color: #c90934;
+    border-style: solid;
+    font-family: "GodofWar";
+    align-items: center;
+    box-shadow: 20px 10px 10px;
+
+}
+.cargo{
+    font-size: 20px;
+}
+
+.card .tabs{
+    background-color: rgb(31, 30, 30);
+    list-style-type: none;
+    display: flex;
+    padding-left: 0px;
+    margin-left: 35px;
+    width: 80%;
+}
+
+.card .tabs .tab{
+    width: 20%;
+    padding: 10px;
+    justify-content: center;
+    vertical-align: middle;
+    transition: background-color 0.2s ease-in-out;
+}
+
+
+
+.card .tabs .tab.selected{
+    background-color: rgb(70, 70, 70);
+    
+}
+
+.card .tabs .tab:hover{
+    background-color: rgb(78, 78, 78);
+}
+
+.tabs img{
+    width: 25px;
+    height: 23px;
+    
+}
+
+.tabs-info .info{
+    display: none;
+}
+.tabs-info .info.selected{
+    display: block;
+}
+
+span{
+    color: green;
+}
+
+
+.foto{
+    border-radius: 50%;
+    border-style: solid;
+    border-color: #c90934;
+}
+
+.profile{
+    font-family: "GodofWar";
+    color: #c90934;
+}
+
+
+.tabs-info{
+    background-color: rgb(31, 30, 30);
+    font-family: "CrikeySquatsRegular";
+    color: rgb(168, 168, 168);
+    height: 300px;
+    overflow-y: scroll;
+}
+
+.subtitle{
+    color: #c90934;
+    text-decoration: underline;
+}
+
+.social{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.info.selected{
+    display: block;
+}
+
+.social li a{
+    color: azure;
+    width: 250px;
+    display: block;
+    padding: 10px;
+    transition: opacity 0.2s ease-in-out;
+}
+.social li a:hover{
+    opacity: 0.5;
+}
+.social .linkedin{
+    background-color: #0b64c4;
+    width: 85%;
+
+}
+.social .linkedin a img{
+    width: 13%;
+    height: 10%;
+    margin: -10px;
+    margin-top: -6px;
+    vertical-align: middle;
+    float: left;
+}
+.social .github{
+    background-color: #000000;
+    width: 85%;
+}
+.social .github a img{
+    width: 13%;
+    height: 10%;
+    margin: -10px;
+    margin-top: -4px;
+    margin-left: -6px;
+    vertical-align: middle;
+    float: left;
+}
+hr{
+    border-color: #c90934;
+}
+
+@font-face {
+    font-family: AracneCondensedRegular;
+    src: url(../font/AracneCondensedRegular.woff);
+}
+
+@font-face {
+    font-family: CoreBandiFace;
+    src: url(../font/CoreBandiFace.woff);
+}
+
+@font-face {
+    font-family: CrikeySquatsRegular;
+    src: url(../font/CrikeySquatsRegular.woff);
+}
+
+@font-face {
+    font-family: GodofWar;
+    src: url(../font/GODOFWAR.woff2);
+}
